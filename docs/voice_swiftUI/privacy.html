@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoxTask 隐私政策</title>
+  <style>
+    body{font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC",sans-serif;margin:24px;color:#111}
+    h1{font-size:28px;margin:.2em 0}
+    h2{font-size:20px;margin:1.2em 0 .4em}
+    p{margin:.6em 0}
+    code,pre{background:#f6f8fa;border-radius:6px;padding:.2em .4em}
+    .meta{color:#666;font-size:14px}
+    ul{margin:.4em 0 .8em 1.2em}
+    .hr{height:1px;background:#eee;margin:16px 0}
+    a{color:#0366d6;text-decoration:none}
+  </style>
+</head>
+<body>
+<h1>VoxTask 隐私政策</h1>
+<p class="meta">最近更新：2025-09-22</p>
+<p>本隐私政策旨在说明 VoxTask（以下简称“本应用”）如何处理您的信息。请在使用前仔细阅读。</p>
+<h2>1. 我们是谁</h2>
+<ul>
+  <li>产品名称：VoxTask（语音备忘录，录音转文字）</li>
+  <li>联系方式：<a href="mailto:3506338230@qq.com">3506338230@qq.com</a></li>
+</ul>
+<h2>2. 我们收集与处理的信息</h2>
+<p>仅在提供“语音转文字”和相关功能所必需时处理信息。</p>
+<ul>
+  <li><b>麦克风音频（用户内容）</b>：仅当您主动按住录音并发起识别时采集；音频通过加密连接（TLS/WSS）发送至第三方语音识别服务（字节跳动 ASR）进行转写；本应用不在本地或自有服务器长期存储音频。</li>
+  <li><b>识别文本</b>：仅保存在您的设备本地，用于展示与保存为备忘事项；不会上传至我们任何自有服务器。</li>
+  <li><b>配置与凭证</b>：ASR Token、LLM API Key 等敏感配置保存在 iOS Keychain，仅用于直连相应第三方服务；不上传给我们。</li>
+  <li><b>诊断与错误信息</b>：用于本地排查（例如错误码、网络超时）；默认不包含音频内容；不会被我们远程收集。</li>
+</ul>
+<h2>3. 第三方服务与共享</h2>
+<p>为实现语音识别与（可选）文本分析，本应用会与以下服务通讯：</p>
+<ul>
+  <li>字节跳动 ASR（<code>openspeech.bytedance.com</code>，WSS）——将音频发送以获得转写文本。</li>
+  <li>选用的大模型服务（例如智谱 GLM 兼容接口）——仅在您启用“智能分析/润色”时，将转写文本发送以获得建议。</li>
+</ul>
+<p>除上述必要处理外，本应用不向任何第三方出售或出于广告目的共享您的数据。</p>
+<h2>4. 传输安全</h2>
+<ul>
+  <li>与第三方服务的通讯采用加密传输（HTTPS/WSS/TLS）。</li>
+  <li>建议在可信网络环境中使用，避免代理/抓包导致的握手失败或数据风险。</li>
+</ul>
+<h2>5. 数据存储与保留</h2>
+<ul>
+  <li>音频：不在本地或我们自有服务器长期保留；仅传输至第三方 ASR 完成实时处理。</li>
+  <li>文本：保留在设备本地，直至您删除、清空或卸载 App。</li>
+  <li>凭证：保存在 iOS Keychain；您可在设置中清除敏感数据。</li>
+</ul>
+<h2>6. 您的权利</h2>
+<ul>
+  <li>访问、更正、删除本应用内保存的数据（例如删除任务、清空敏感配置）。</li>
+  <li>撤回权限（例如关闭麦克风权限，或在设置中清除凭证）。</li>
+  <li>隐私相关诉求：<a href="mailto:3506338230@qq.com">3506338230@qq.com</a></li>
+</ul>
+<h2>7. 未成年人</h2>
+<p>本应用不以 13 岁以下儿童为目标用户。如您认为我们在不知情情况下处理了儿童数据，请与我们联系以便尽快处理。</p>
+<h2>8. 政策变更</h2>
+<p>我们可能因功能或法规变化更新本政策。变更将发布于本页并自“最近更新”日期起生效。</p>
+<div class="hr"></div>
+<small>
+<b>数据营养标签（App Store 申报口径建议）</b><br>
+— 数据类型：音频（用户内容，功能用途）、诊断（仅本地）<br>
+— 目的：仅用于 App 功能，不用于追踪或第三方广告<br>
+— 关联：不与用户身份关联；不用于跨 App 跟踪
+</small>
+</body>
+</html>
