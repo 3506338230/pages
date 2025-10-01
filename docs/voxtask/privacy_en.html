@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoxTask Privacy Policy</title>
+  <style>
+    body{font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;margin:24px;color:#111}
+    h1{font-size:28px;margin:.2em 0}
+    h2{font-size:20px;margin:1.2em 0 .4em}
+    p{margin:.6em 0}
+    code,pre{background:#f6f8fa;border-radius:6px;padding:.2em .4em}
+    .meta{color:#666;font-size:14px}
+    ul{margin:.4em 0 .8em 1.2em}
+    .hr{height:1px;background:#eee;margin:16px 0}
+    a{color:#0366d6;text-decoration:none}
+  </style>
+</head>
+<body>
+<h1>VoxTask Privacy Policy</h1>
+<p class="meta">Last updated: 2025-09-22</p>
+<p>This Privacy Policy explains how VoxTask ("the App") handles your information. Please read it carefully before use.</p>
+<h2>1. Who we are</h2>
+<ul>
+  <li>Product name: VoxTask (voice memos to text)</li>
+  <li>Contact: <a href="mailto:3506338230@qq.com">3506338230@qq.com</a></li>
+</ul>
+<h2>2. What we collect and how we use it</h2>
+<p>We only process information necessary to provide “speech-to-text” and related features.</p>
+<ul>
+  <li><b>Microphone audio (user content)</b>: Captured only when you actively press and hold to record and start transcription. Audio is sent via encrypted connection (TLS/WSS) to a third‑party ASR service (ByteDance ASR) for transcription. The App does not store your audio locally or on our own servers for the long term.</li>
+  <li><b>Transcribed text</b>: Stored only on your device (App sandbox) for display and saving as memos; not uploaded to our own servers.</li>
+  <li><b>Configs & credentials</b>: Sensitive configs (ASR token, LLM API key) are kept in iOS Keychain and used only to connect to their respective third‑party services; not uploaded to us.</li>
+  <li><b>Diagnostics</b>: Used locally for troubleshooting (e.g., error codes, network timeouts). By default no audio content is included; not collected by us remotely.</li>
+</ul>
+<h2>3. Third‑party services & sharing</h2>
+<p>To enable speech recognition and (optional) text analysis, the App communicates with:</p>
+<ul>
+  <li>ByteDance ASR (<code>openspeech.bytedance.com</code>, WSS) — audio is sent to obtain transcription.</li>
+  <li>Optional LLM provider (e.g., GLM‑compatible) — only when you enable “smart analysis/polish”, transcribed text is sent to get suggestions.</li>
+</ul>
+<p>Beyond the above, we do not sell or share your data for advertising purposes.</p>
+<h2>4. Security in transit</h2>
+<ul>
+  <li>All communications with third‑party services use encrypted transport (HTTPS/WSS/TLS).</li>
+  <li>We recommend using trusted networks to avoid handshake failures or risks caused by proxies/inspection.</li>
+</ul>
+<h2>5. Storage & retention</h2>
+<ul>
+  <li>Audio: not retained locally or on our own servers; sent only for real‑time ASR processing.</li>
+  <li>Text: stays on your device until you delete/clear or uninstall the App.</li>
+  <li>Credentials: stored in iOS Keychain; you can clear them in Settings (debug builds).</li>
+</ul>
+<h2>6. Your rights</h2>
+<ul>
+  <li>Access, correct, and delete data saved inside the App (e.g., delete tasks/clear credentials).</li>
+  <li>Revoke permissions (e.g., disable microphone, clear credentials in Settings).</li>
+  <li>Contact us at <a href="mailto:3506338230@qq.com">3506338230@qq.com</a>.</li>
+</ul>
+<h2>7. Children</h2>
+<p>The App is not directed to children under 13. If you believe we processed children’s data unknowingly, contact us so we can act promptly.</p>
+<h2>8. Changes</h2>
+<p>We may update this policy due to feature or regulatory changes. Updates will be posted here and take effect from the “Last updated” date.</p>
+<div class="hr"></div>
+<small>
+<b>App Store privacy label (suggested)</b><br>
+— Data types: Audio (user content, functionality), Diagnostics (local only)<br>
+— Purpose: App functionality only; not used for tracking or third‑party ads<br>
+— Linked: Not linked to user identity; no cross‑app tracking
+</small>
+</body>
+</html>

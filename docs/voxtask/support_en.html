@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoxTask Support</title>
+  <style>
+    body{font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;margin:24px;color:#111}
+    h1{font-size:28px;margin:.2em 0}
+    h2{font-size:20px;margin:1.2em 0 .4em}
+    p{margin:.6em 0}
+    code,pre{background:#f6f8fa;border-radius:6px;padding:.2em .4em}
+    ul{margin:.4em 0 .8em 1.2em}
+    a{color:#0366d6;text-decoration:none}
+  </style>
+</head>
+<body>
+<h1>VoxTask Support</h1>
+<p>Last updated: 2025-09-22</p>
+<h2>About</h2>
+<p>VoxTask is a voice‑first memo tool: press and hold to record → release to transcribe → save as a task. Speech recognition uses ByteDance ASR over encrypted transport.</p>
+<h2>Quick start</h2>
+<ol>
+  <li>Allow microphone access on first launch.</li>
+  <li>Settings → ASR Configuration: fill App ID / Token / Cluster.</li>
+  <li>(Optional) Settings → AI Model Configuration: fill your LLM API for keywords/polish.</li>
+  <li>Back to All, tap “+”, record, release to transcribe, and save.</li>
+</ol>
+<h2>FAQ</h2>
+<ul>
+  <li><b>No result for a long time?</b> Check network reachability; enterprise proxies may block WSS. Try Wi‑Fi without proxy or cellular.</li>
+  <li><b>ASR errors?</b> 1001 invalid parameters (check AppID/Token/Cluster); 1012 invalid audio format (use built‑in recorder 16kHz/16‑bit/mono); 1020 timeout (retry); 1005 server busy (retry later).</li>
+  <li><b>Clear sensitive info?</b> In debug builds: Settings → Data & Storage; release builds hide this section.</li>
+  <li><b>Do you upload my data to your servers?</b> No. Audio is sent only to ASR for transcription; text stays on your device.</li>
+</ul>
+<h2>Privacy</h2>
+<p>See <a href="./privacy_en.html">Privacy Policy</a>.</p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:3506338230@qq.com">3506338230@qq.com</a></p>
+</body>
+</html>
